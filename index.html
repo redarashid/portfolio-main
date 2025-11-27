@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/Coding.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1>Rashid.</h1>
+            <div class="list" id="list">
+                <ul class="nav-links">
+                    <li><a href="#Home" class="navbar-link active">Home</a></li>
+                    <li><a href="#About" class="navbar-link">About</a></li>
+                    <li><a href="#Projects" class="navbar-link">Projects</a></li>
+                    <li><a href="#Skills" class="navbar-link">Skills</a></li>
+                    <li><a href="#Contact" class="navbar-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!------------Home--------------->
+    <section id="Home" class="Home">
+        <canvas id="canvas"></canvas>
+        <div class="Home-content">
+            <div class="introduction"> 
+                <h2 id="Home" class="shiny-text fw-bolder my-4">Rashid Reda</h2>
+                <div class="animated-text">
+                    I'm a <span></span>
+                    <p>
+                    I build efficient, user-focused web interfaces using modern front-end technologies. 
+                    I focus on clean, maintainable code, responsive layouts, and delivering smooth, intuitive user experiences. 
+                    I’m always improving my skills and keeping up with the latest best practices to create fast, reliable, and visually engaging websites.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/redarashid"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/rashid-reda-4048a5314/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://wa.me/2001003184702"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <a class="btn btn-primary" href="https://drive.google.com/file/d/1-HGL86BiEoxbQFoyaHifPCtuJ-cSLM_p/view?usp=drive_link" Download>Download CV</a>
+                    <button onclick="window.location.href='#Contact'" class="btn btn-secoundry">Contact Me</button>
+                </div>
+                
+            </div>
+            <figure class="photo1 ratio ratio-1x1 mx-auto" style="width: 320px;">
+                <img class="w-100 h-100 rounded-circle " src="./img/Presonal Photo.jpg" alt="Personal Photo">
+            </figure>
+        </div>
+    </section>
+    <!--------------about----------->
+    <section id="About" class="about animate-on-scroll">
+        <h2 class="container-title">About Me</h2>
+        <div class="about-content" id="about-content">
+            <div class="Technical-Skills w-75">
+                <div class="shadow w-100 p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                    <div class="icon rounded-3 text-center p-2"><i class='bx bx-code-alt bx-tada fs-1' ></i></div>
+                    <div class="discription">
+                        <h4>Web Development</h4>
+                        <p>I developed a fully responsive e-commerce website with a clean user interface and a smooth, intuitive shopping experience.</p>
+                    </div>
+                </div>
+                <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                    <div class="icon rounded-3 text-center p-2"><i class='bx bxs-briefcase-alt-2 bx-flashing fs-1' ></i></div>
+                    <div class="discription">
+                        <h4>Dashboard </h4>
+                        <p>Leading projects from conception to completion with agile methodologies, including building a fully responsive dashboard with clear data visualization and intuitive user workflows.</p>
+                    </div>
+                </div>
+                <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                    <div class="icon rounded-3 text-center p-2"><i class='bx bx-bulb bx-tada fs-1' ></i></div>
+                    <div class="discription">
+                        <h4>Improving SEO & Accessibility</h4>
+                        <p>Improving SEO and accessibility, and creating high-performance, user-focused web experiences that are both clean and intuitive.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="about-text">
+                <h3 class="animate-child">My Evolution in Web Development</h3>
+                <p class="animate-child">
+                    I build modern, responsive, and accessible web interfaces that focus on clarity, performance, and user satisfaction. 
+                    I’m dedicated to writing clean, maintainable code and turning ideas into polished digital experiences.
+                    My work blends technical precision with thoughtful design, ensuring every project aligns with user needs and business goals. 
+                    I consistently stay up to date with new tools, standards, and best practices to keep improving the quality of what I deliver.
+                    <br>Outside of development, I enjoy exploring new technologies and learning how they shape the future of the web.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!---------Projects--------->
+    <section id="Projects" class="Projects animate-on-scroll">
+        <h2 class="container-title">My Projects</h2>
+        <div class='w-100 d-flex justify-content-center gap-3 my-5 flex-wrap'>
+        <button class='btn btn-primary filter' data-filter="All" onclick="filterItems('All')">All</button>
+        <button class='btn btn-primary filter' data-filter="HTML-CSS" onclick="filterItems('HTML-CSS')">HTML-CSS</button>
+        <button class='btn btn-primary filter' data-filter="HTML-CSS-JS" onclick="filterItems('HTML-CSS-JS')">HTML-CSS-JS</button>
+        <button class='btn btn-primary filter' data-filter="React.js" onclick="filterItems('React.js')">React.js</button>
+        <button class='btn btn-primary filter' data-filter="Next.js" onclick="filterItems('Next.js')">Next.js</button>
+        </div>
+        <div class="content-projects p-2 mx-lg-5 my-5 animate-child">
+            <div class="card animate-child w-100 text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Decore.jpeg" class="card-img-top animate-child" alt="Copy History">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Decore</h4>
+                    <p class="card-text animate-child text-white-50">A modern interior design landing website built with HTML, CSS, and JavaScript. 
+                        It features a clean hero section, service highlights, project showcases, animated counters, 
+                        and a fully responsive layout that delivers a professional and elegant user experience.
+                        which helps users track and organize everything they copy across multiple devices.</p>
+                    <a href="https://decore-bice.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/JavaScript/tree/main/JS_Projects/Decore" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Personal_wbsite.jpeg" class="card-img-top animate-child" alt="personal_wbsite">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Personal Website</h4>
+                    <p class="card-text animate-child text-white-50">A dynamic personal portfolio website built with JavaScript, showcasing skills, projects, 
+                        and professional achievements with an interactive design and client testimonials.</p>
+                    <a href="https://personalwbsite-smoky.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/JavaScript/tree/main/JS_Projects/personal_wbsite" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/portfolio.jpeg" class="card-img-top animate-child" alt="portfolio">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Profile</h4>
+                    <p class="card-text animate-child text-white-50">A modern personal portfolio website built with JavaScript, designed to showcase skills, 
+                        projects, and professional experience in an interactive and engaging way.</p>
+                    <a href="https://profile-coral-ten.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/JavaScript/tree/main/JS_Projects/Portfolio" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/CnTube.jpeg" class="card-img-top animate-child " alt="CnTube">
+                </figure>
+                <div class="card-body">
+                    <h4 class="card-title ">CnTube</h4>
+                    <p class="card-text text-white-50">A YouTube-style video browsing interface built using JavaScript, HTML, and CSS. The project features a clean responsive layout with categories,
+                        a sidebar menu, a search bar, and dynamic video cards to simulate a modern video-platform experience.</p>
+                    <a href="https://cntube-mu.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/JavaScript/tree/main/JS_Projects/CnTube" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/CRUDS.jpeg" class="card-img-top animate-child " alt="CRUDS">
+                </figure>
+                <div class="card-body">
+                    <h4 class="card-title ">CRUDS</h4>
+                    <p class="card-text text-white-50">A full-featured CRUD (Create, Read, Update, Delete) application built with JavaScript, 
+                        allowing users to efficiently manage data through an interactive and dynamic interface.</p>
+                    <a href="https://crud-delta-three.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/JavaScript/tree/main/JS_Projects/Test-CRUDS" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Game.jpeg" class="card-img-top animate-child " alt="Game">
+                </figure>
+                <div class="card-body">
+                    <h4 class="card-title ">Quest</h4>
+                    <p class="card-text text-white-50">An interactive word challenge game built with JavaScript where players must type 
+                        the displayed word within a limited time. Correct entries score points, while failing to type in time results in a “Game Over,” 
+                        creating a fast-paced and engaging experience to test speed and accuracy.</p>
+                    <a href="https://quest-lovat.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/Game" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Hangman.jpeg" class="card-img-top animate-child " alt="hangman">
+                </figure>
+                <div class="card-body">
+                    <h4 class="card-title ">Hangman</h4>
+                    <p class="card-text text-white-50">An interactive Hangman game built with JavaScript, featuring dynamic word selection,
+                        user-friendly interface, and engaging visual feedback. Players can guess letters, track their attempts, 
+                        and enjoy sound effects for success and failure, providing a fun and educational experience.</p>
+                    <a href="https://hang-beryl.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/hangman" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Rashid.jpeg" class="card-img-top animate-child " alt="Rashid">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Rashid</h4>
+                    <p class="card-text animate-child text-white-50">Rashid World is a modern, responsive website template built with HTML & CSS, 
+                        featuring multiple sections like articles, gallery, services, skills, pricing, and more.
+                        It’s designed to showcase personal content in a clean, structured, and professional layout.</p>
+                    <a href="https://rashed-gold.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/rashid" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/SmartCalc.jpeg" class="card-img-top animate-child " alt="calulator">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Calculator</h4>
+                    <p class="card-text animate-child text-white-50">A simple calculator designed using HTML and CSS. The layout is structured with HTML, 
+                        while CSS is used to style the buttons and display, 
+                        creating a visually appealing and responsive interface. </p>
+                    <a href="https://smartcalc-rho.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/Projects.css/tree/main/calulator" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Dash.jpeg" class="card-img-top animate-child " alt="dash">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Rashid Dash</h4>
+                    <p class="card-text animate-child text-white-50">Rashid Dashboard is a modern and responsive admin dashboard template built with HTML & CSS, 
+                        showcasing project management, tasks, team statistics, files, and user activities.
+                        It provides a clean and structured interface for tracking projects, deadlines, 
+                        earnings, and latest updates in a professional layout. </p>
+                    <a href="https://rashiddash.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/rashid-dash" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Shine.jpeg" class="card-img-top animate-child " alt="Shine">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Shine</h4>
+                    <p class="card-text animate-child text-white-50">Lights is a modern interactive project built using HTML & CSS designed to showcase dynamic lighting effects and visual animations.
+                        It provides a clean and engaging interface for demonstrating visual creativity and frontend design skills. </p>
+                    <a href="https://shine-beige.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/Projects.css/tree/main/weather" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Kasper.jpeg" class="card-img-top animate-child " alt="Kasper">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Kasper</h4>
+                    <p class="card-text animate-child text-white-50">Kasper is a clean, responsive static website built using HTML5 and CSS3. 
+                        It provides a well-structured layout and stylish design — 
+                        ideal as a personal portfolio or a modern landing page. </p>
+                    <a href="https://kasp-eight.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/Kasper" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Leon.jpeg" class="card-img-top animate-child " alt="leon">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Leon</h4>
+                    <p class="card-text animate-child text-white-50">Leon is a clean and responsive HTML & CSS template designed as a modern landing page with organized sections and smooth layout styling. 
+                        Perfect for showcasing frontend design skills. </p>
+                    <a href="https://leox-delta.vercel.app/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/redarashid/Projects.css/tree/main/leon" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/E-commerce.jpeg" class="card-img-top animate-child " alt="E-Commerce">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">E-Commerce</h4>
+                    <p class="card-text animate-child text-white-50"> I build efficient, user-focused web interfaces using modern front-end technologies. 
+                    I focus on clean, maintainable code, responsive layouts, and delivering smooth, intuitive user experiences. 
+                    I’m always improving my skills and keeping up with the latest best practices to create fast, reliable, and visually engaging websites.
+                    </p></p>
+                    <a href="https://omarhosny1.github.io/DigitalBank/" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/Omarhosny1/DigitalBank" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Weather.jpeg" class="card-img-top animate-child " alt="Task Manager">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Weather Application</h4>
+                    <p class="card-text animate-child text-white-50">This is a weather forecast app where you can find current weather details and weather forcast of any places. 
+                        To get the city's details GeoDB from Rapid API was implemented and fetch with OpenWeather API to get the weather's data. Tailwind CSS use to styling and responsive layout.</p>
+                    <a href="https://weather-app-react-tailwind-lf9w.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/weather-app" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Blog.jpeg" class="card-img-top animate-child " alt="Task Manager">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">React Blog</h4>
+                    <p class="card-text animate-child text-white-50">A simple blog project built with React.js, Redux, RTK Query, React Router, and Tailwind CSS. The project uses JSON Server as a mock API for data, 
+                        allowing users to create, list, update, and delete blog posts.</p>
+                    <a href="https://react-blog-mocha.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/blog-app" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Dashboard.jpeg" class="card-img-top animate-child " alt="Task Manager">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Dashboard</h4>
+                    <p class="card-text animate-child text-white-50">A responsive data-visualization dashboard built with React and Chart.js, featuring interactive charts, customizable views, 
+                        and an intuitive interface that helps users understand complex data quickly and efficiently.</p>
+                    <a href="https://admin-dashboard-68262.web.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/dashboard" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Task-management.jpeg" class="card-img-top animate-child " alt="Task Manager">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Task Management</h4>
+                    <p class="card-text animate-child text-white-50">A minimal React + Vite starter project featuring fast development with HMR, clean code enforcement using ESLint, 
+                        and a lightweight structure ideal for building modern web applications.</p>
+                    <a href="https://weather-app-vico-3ht6bn4jd-rashid-redas-projects.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/task-management" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+            <div class="card animate-child w-100 text-center project Next.js" style="width: 18rem;">
+                <figure>
+                    <img src="./img/Todo.jpeg" class="card-img-top animate-child " alt="todo-list">
+                </figure>
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">Todo List</h4>
+                    <p class="card-text animate-child text-white-50">A modern Todo List app built with Next.js 15 and React, designed to help users manage tasks and categories with ease. 
+                        It features a clean UI, theme switching, and full data persistence using LocalStorage.</p>
+                    <a href="https://my-app-nine-dun-39.vercel.app/" class="btn btn-primary ">Demo</a>
+                    <a href="https://github.com/redarashid/todo-list-next" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+    </section>
+    <!--------------Skills----------------->
+    <section id="Skills" class="skills-section animate-on-scroll">
+        <h2 class="container-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" class="skill-icon" />
+                </figure>
+                <h3>HTML5</h3>
+                <p>Semantic and accessible markup</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" class="skill-icon" />
+                </figure>
+                <h3>CSS3</h3>
+                <p>Responsive design and animations</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/Tailwind_CSS_Logo.svg.png" alt="Tailwind" class="skill-icon" />
+                </figure>
+                <h3>TailWind</h3>
+                <p>Tailwind CSS – Utility-first CSS framework</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/Bootstrap_logo.svg.png" alt="Bootstrap" class="skill-icon" />
+                </figure>
+                <h3>Bootstrap CSS</h3>
+                <p>Bootstrap CSS – Framework for building responsive and professional web interfaces.</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"
+                    class="skill-icon" />
+                </figure>
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, and APIs</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/typescript.png" alt="Typescript"
+                    class="skill-icon" />
+                </figure>
+                <h3>Typescript</h3>
+                <p>TypeScript – Superset of JavaScript that adds static typing for safer and more maintainable code.</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon" />
+                </figure>
+                <h3>React</h3>
+                <p>Component-based UI and hooks</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/next_js_logo.png" alt="Next" class="skill-icon" />
+                </figure>
+                <h3>Next</h3>
+                <p>Next.js – React framework for building fast, server-side rendered, and SEO-friendly web applications.</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/redux.png" alt="Redux" class="skill-icon" />
+                </figure>
+                <h3>Redux</h3>
+                <p>Next.js – React framework for building fast, server-side rendered, and SEO-friendly web applications.</p>
+            </div>
+            <div class="skill-card animate-child">
+                <figure>
+                    <img src="./img/Datastructure.jfif" alt="Data structure" class="skill-icon" />
+                </figure>
+                <h3>Data structure</h3>
+                <p>Next.js – React framework for building fast, server-side rendered, and SEO-friendly web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------Contact------------>
+    <section id="Contact" class="Contact animate-on-scroll">
+        <h2 class="container-title">Get In Touch</h2>
+        <div class="content-contact">
+            <div class="contact-content">
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="text1">
+                        <h3>Email</h3>
+                        <p><a class="text-light" href="mailto:Omhosny66@gmail.com">redarashid824@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <div class="text1">
+                        <h3>Phone</h3>
+                        <p><a class="text-light" href="tel:+201003184702">+201225893594</a></p>
+                    </div>
+                </div>
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bxs-map'></i>
+                    </div>
+                    <div class="text1">
+                        <h3>Location</h3>
+                        <p>Egypt, Cairo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="label animate-child shadow ">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control " id="Name" required>
+
+                        <label for="exampleFormControlInput1" class="form-label my-2">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control my-2" id="exampleFormControlTextarea1" rows="3"
+                            required></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-------- footer--- -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/redarashid">github</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <p class="footer-text">&copy; 2025 Rashid Reda. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
