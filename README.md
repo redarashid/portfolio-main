@@ -29,4 +29,4 @@ Responsive Design Techniques
 
 🎯 Purpose
 
-This portfolio serves as my digital identity and highlights my ability to build fast, responsive, and user-focused web interfaces.
+This portfolio represents my digital identity and showcases my ability to build fast, responsive, and user-focused web interfaces.
